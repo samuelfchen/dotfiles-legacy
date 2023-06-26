@@ -74,10 +74,13 @@ plugins=(
     git 
     z 
     zsh-autosuggestions
+    fast-syntax-highlighting
     zsh-vi-mode
 )
 
+
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -113,11 +116,12 @@ source ~/.fzf.zsh
 
 # Git aliasing
 alias g='git'
-source /usr/share/bash-completion/completions/git
-complete -o default -o nospace -F _git g
+# source /usr/share/bash-completion/completions/git
+# complete -o default -o nospace -F _git g
 
 # nvim to vim 
 alias vim=nvim
+alias ls='ls -lash'
 
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
@@ -134,3 +138,5 @@ alias vim=nvim
 # unset __conda_setup
 # # <<< conda initialize <<<
 
+export JAVA_HOME=/Library/Java/Home
+alias python=/usr/bin/python3source /Users/samuelchen/temp/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
